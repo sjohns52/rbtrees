@@ -1,6 +1,6 @@
 CXX = g++
 AR = ar
-CFLAGS = -ggdb -Wall
+CFLAGS = -O3 -ggdb -Wall
 LD = -lgtest
 INCLUDES = -Iincludes
 LIBINC = -I/usr/local/include

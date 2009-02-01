@@ -19,10 +19,10 @@ TEST(TestRBTrees, testInsert)
 {
 	int i;
 	RBTree *myTree = new RBTree(10, NULL);
-	for (i = 1; i < 1000; i++) {
+	for (i = 1; i < 1000000; i++) {
 		myTree->insertNode(i, NULL);
 	}
-	int num = rand() % 1000 ;
+	int num = rand() % 1000000 ;
 	RBTreeNode *node = myTree->queryTree(num);
 	ASSERT_TRUE(node != NULL);
 	ASSERT_EQ(num, node->getKey());
