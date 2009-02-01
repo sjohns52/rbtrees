@@ -63,5 +63,9 @@ namespace ASoliman {
 	void RBTreeNode::setColor(short color) {
 		this->color_ = color;
 	}
+	RBTreeNode::~RBTreeNode() {
+		delete this->left_;
+		delete this->right_;
+	}
 
 }
