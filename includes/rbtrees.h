@@ -19,6 +19,7 @@ static const short RIGHT_ = 200;
 class RBTreeNode {
 	public:
 		RBTreeNode(RBTreeNode *parent, int32_t key, void *data);
+		~RBTreeNode();
 		RBTreeNode *getParent();
 		RBTreeNode *getLeft();
 		RBTreeNode *getRight();

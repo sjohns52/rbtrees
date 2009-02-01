@@ -384,5 +384,7 @@ RBTreeNode *RBTree::getMaximum_(RBTreeNode *tree) {
 	}
 	return tree;
 }
-
+RBTree::~RBTree() {
+	delete this->root_;
+}
 }
